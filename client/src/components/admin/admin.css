@@ -1,0 +1,191 @@
+.admin-shell {
+  display: flex;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background: #f6f5f2;
+  color: #1c1c1c;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background: #1c1c1c;
+  color: #f6f5f2;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1rem;
+}
+
+.admin-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-nav-link {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  color: #d8d6cf;
+  text-decoration: none;
+  margin-bottom: 0.25rem;
+  font-size: 0.92rem;
+}
+
+.admin-nav-link:hover {
+  background: #2c2c2c;
+}
+
+.admin-nav-link.active {
+  background: #3a3a3a;
+  color: #fff;
+  font-weight: 600;
+}
+
+.admin-user-box {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+}
+
+.admin-user-name {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.admin-logout-btn {
+  width: 100%;
+  padding: 0.4rem;
+  background: transparent;
+  border: 1px solid #555;
+  color: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-x: auto;
+}
+
+.admin-loading {
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+}
+
+.admin-page-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.admin-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.admin-stat-card {
+  background: #fff;
+  border: 1px solid #e4e2db;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.admin-stat-card .value {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.admin-stat-card .label {
+  font-size: 0.85rem;
+  color: #6b6b6b;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+.admin-table th,
+.admin-table td {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-table th {
+  background: #efece4;
+  font-weight: 600;
+}
+
+.admin-form {
+  background: #fff;
+  border: 1px solid #e4e2db;
+  border-radius: 10px;
+  padding: 1.25rem;
+  max-width: 480px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.admin-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  gap: 0.25rem;
+}
+
+.admin-form input,
+.admin-form select,
+.admin-form textarea {
+  padding: 0.45rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.admin-btn {
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  border: none;
+  background: #1c1c1c;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.admin-btn.danger {
+  background: #b3261e;
+}
+
+.admin-btn.secondary {
+  background: #6b6b6b;
+}
+
+.admin-error {
+  color: #b3261e;
+  font-size: 0.85rem;
+}
+
+.admin-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: #efece4;
+}
+
+.admin-badge.low {
+  background: #fbe3e0;
+  color: #b3261e;
+}
