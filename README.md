@@ -88,26 +88,27 @@ Additional details - cover condition, page condition, visible wear, and general 
 - Git / GitHub
 
 ## Project Structure
+```
 booknest/
-├── client/          React + TS + Vite frontend (port 5173)
-│   └── src/
-│       ├── api/          Fetch wrapper for backend calls
-│       ├── context/       Auth, Cart, Toast state
-│       ├── components/    Shared UI (Navbar, BookCard, admin shell, etc.)
-│       ├── pages/          Customer pages + admin/ subfolder
-│       ├── routes/         RequireAuth, RequireAdmin guards
-│       └── styles/         Design system (global.css)
-├── server/          Express + TS backend (port 4000)
-│   └── src/
-│       ├── controllers/    Business logic per resource
-│       ├── routes/         Express route definitions
-│       ├── middleware/     Auth, error handling
-│       ├── db/              Schema, migrations, seed data, pool
-│       ├── config/          Redis client
-│       └── utils/           JWT, password hashing, validation
+├── client/ React + TS + Vite frontend (port 5173)
+│ └── src/
+│ ├── api/ Fetch wrapper for backend calls
+│ ├── context/ Auth, Cart, Toast state
+│ ├── components/ Shared UI (Navbar, BookCard, admin shell, etc.)
+│ ├── pages/ Customer pages + admin/ subfolder
+│ ├── routes/ RequireAuth, RequireAdmin guards
+│ └── styles/ Design system (global.css)
+├── server/ Express + TS backend (port 4000)
+│ └── src/
+│ ├── controllers/ Business logic per resource
+│ ├── routes/ Express route definitions
+│ ├── middleware/ Auth, error handling
+│ ├── db/ Schema, migrations, seed data, pool
+│ ├── config/ Redis client
+│ └── utils/ JWT, password hashing, validation
 ├── docker-compose.yml
-└── package.json     (npm workspaces root)
-
+└── package.json (npm workspaces root)
+```
 
 ## Setup Instructions
 
